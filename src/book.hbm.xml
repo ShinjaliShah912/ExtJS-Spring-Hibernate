@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">  
+  
+<hibernate-mapping>  
+<class name="org.techzoo.springmvc.vo.BookVO" table="BOOK_DETAIL">  
+          <id name="id">  
+          <generator class="assigned"></generator>  
+          </id>  
+            
+          <property name="title" >
+          		<column name="TITLE"> </column>
+          </property>  
+         
+          <property name="author">
+          	<column name="AUTHOR"> </column>
+          </property>  
+         
+          <property name="price">
+          	<column name="PRICE"> </column>
+          </property> 
+          <property name="qty">
+          	<column name="QTY"> </column>
+          </property> 
+</class>  
+            
+</hibernate-mapping>  
